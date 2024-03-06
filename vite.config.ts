@@ -8,6 +8,7 @@ export default defineConfig({
       babel: {
         plugins: [
           "babel-plugin-macros",
+          "@emotion/babel-plugin",
           [
             "@emotion/babel-plugin-jsx-pragmatic",
             {

@@ -29,12 +29,12 @@ function App() {
   return (
     <div tw="flex w-full">
       <ul tw="flex gap-10 w-full mx-auto">
-        <li tw='flex flex-col items-center gap-4'>
-          <label tw='text-white'>С использованием transition-group</label>
+        <li tw="flex flex-col items-center gap-4">
+          <label tw="text-white">С использованием transition-group</label>
           <SelectTransition options={selectData.options} title={selectData.title} width={selectData.width} />
         </li>
-        <li tw='flex flex-col items-center gap-4'>
-        <label tw='text-white'>Без transition-group</label>
+        <li tw="flex flex-col items-center gap-4">
+          <label tw="text-white">Без transition-group</label>
           <Select options={selectData.options} title={selectData.title} width={selectData.width} />
         </li>
       </ul>
