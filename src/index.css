@@ -26,8 +26,12 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  justify-content: center;
+  width: 100%;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #1e1e1e;
+  font-family: "SofiaSans";
 }
 
 h1 {
@@ -65,4 +69,36 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@font-face {
+  font-family: "SofiaSans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/SofiaSans-SemiBold.woff") format("woff2");
+}
+
+.gradient {
+  background: linear-gradient(97.64deg, #54f4df 19.69%, #2ab6fd 96.22%);
+}
+
+.dropdown-enter {
+  opacity: 0;
+  transform: translateY(-5%);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dropdown-exit {
+  opacity: 1;
+}
+
+.dropdown-exit-active {
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: opacity 300ms, transform 300ms;
 }
